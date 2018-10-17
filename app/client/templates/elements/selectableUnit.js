@@ -77,7 +77,8 @@ Template['elements_selectableUnit'].helpers({
     */
   selectedUnit: function() {
     var unit = _.find(selectableUnits, function(unit) {
-      return unit.value === EthTools.getUnit();
+      return unit.value === '50'
+      // EthTools.getUnit();
     });
 
     if (unit) return unit.value;
